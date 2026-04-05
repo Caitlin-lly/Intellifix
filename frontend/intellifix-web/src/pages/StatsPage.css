@@ -1,0 +1,232 @@
+/* 统计页面样式 */
+.stats-page {
+  max-width: 1000px;
+}
+
+.stats-page.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  color: var(--text-secondary);
+}
+
+.stats-page.loading .spinner {
+  margin-bottom: 1rem;
+}
+
+/* 统计网格 */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow);
+}
+
+.stat-card.status {
+  border-left: 4px solid var(--success-color);
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-color);
+  border-radius: 0.75rem;
+  color: var(--primary-color);
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat-content label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.stat-content value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.stat-content value.success {
+  color: var(--success-color);
+}
+
+.stat-content value.error {
+  color: var(--danger-color);
+}
+
+/* 统计区块 */
+.stats-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stats-section {
+  background: var(--card-bg);
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+.stats-section h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* 图表条 */
+.chart-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bar-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bar-item label {
+  width: 100px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.bar-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.bar {
+  height: 24px;
+  background: var(--primary-color);
+  border-radius: 0.25rem;
+  transition: width 0.3s ease;
+}
+
+.bar-value {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  min-width: 30px;
+}
+
+/* 标签云 */
+.tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tag-item {
+  padding: 0.5rem 1rem;
+  background: var(--bg-color);
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  transition: all 0.2s;
+}
+
+.tag-item:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* 型号列表 */
+.model-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.model-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: var(--bg-color);
+  border-radius: 0.5rem;
+}
+
+.model-name {
+  font-weight: 500;
+}
+
+.model-count {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+/* API 信息 */
+.api-info {
+  background: var(--card-bg);
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+.api-info h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.info-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.info-row label {
+  width: 100px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.info-row value {
+  flex: 1;
+}
+
+.info-row a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.info-row a:hover {
+  text-decoration: underline;
+}

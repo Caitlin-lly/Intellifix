@@ -1,0 +1,30 @@
+# 智修Agent - 制造业设备故障处置 Multi-Agent 系统
+# 依赖配置
+
+# LangGraph & LangChain 核心
+langgraph>=0.2.0
+langchain>=0.3.0
+langchain-core>=0.3.0
+
+# 阿里百炼平台集成 (OpenAI 兼容模式)
+langchain-openai>=0.2.0
+openai>=1.0.0
+
+# 向量数据库
+chromadb>=0.5.0
+
+# 配置管理
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# 工具库
+tiktoken>=0.7.0
+numpy>=1.24.0
+
+# 可选：本地 Embedding 模型 (无需 OpenAI 时使用)
+# sentence-transformers>=3.0.0
+
+# 开发工具
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
